@@ -1,0 +1,11 @@
+/* _title
+========================================== */
+// 変数の設定元ファイル
+@use "../../global/_forwards" as fw;
+
+// 呼び出し
+// fw.$変数 で呼び出し
+// break point
+// @include fw.mq("tab") {}
+// @include fw.mq("pc") {}
+// @include fw.mq("max") {}

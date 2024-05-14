@@ -1,0 +1,11 @@
+/* file name or comments
+========================================== */
+// 変数の設定元ファイル
+@use "../../foundation/_break" as break;
+@use "../../foundation/_themevar" as themeVar;
+// 呼び出し
+// themeVar.$変数 で呼び出し
+// break point
+// @include break.tab {}
+// @include break.pc {}
+// @include break.max {}

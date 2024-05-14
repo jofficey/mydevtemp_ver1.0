@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/assets/_scss/style.scss",
+    ]
+}

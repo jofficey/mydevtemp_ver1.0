@@ -1,0 +1,114 @@
+/* _base
+=========================================== */
+// 変数の設定元ファイル
+@use "../global/_forwards" as fw;
+
+// 呼び出し
+// fw.$変数 で呼び出し
+// break point
+// @include fw.mq("tab") {}
+// @include fw.mq("pc") {}
+// @include fw.mq("max") {}
+
+/* _default
+=========================================== */
+html {
+    color: fw.$themeBlack;
+    font-family: fw.$themeJa;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+main {
+    display: block;
+}
+p {
+    color: fw.$themeBlack;
+    font-size: 4.26vw;
+    line-height: 1.2;
+    & + p {
+        margin-top: 24px;
+    }
+}
+@include fw.mq("tab") {
+    p {
+        font-size: 2.08vw;
+    }
+}
+@include fw.mq("pc")  {
+    p {
+        font-size: 1.45vw;
+    }
+}
+@include fw.mq("max")  {
+    p {
+        font-size: 16px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@include fw.mq("pc")  {
+    .sp_none {
+        display: block;
+    }
+    .pc_none {
+        display: none;
+    }
+}
+
+/* _opt
+=========================================== */
+
+/* _fontOpt
+=========================================== */
+.f-en {
+    font-family: fw.$themeEn;
+}
+.f-ja {
+    font-family: fw.$themeJa;
+}
+.f-font-base {
+    font-size: 4.26vw;
+    line-height: 1.2;
+}
+@include fw.mq("tab")  {
+    .f-font-base {
+        font-size: 2.08vw;
+    }
+}
+@include fw.mq("pc") {
+    .f-font-base {
+        font-size: 1.45vw;
+    }
+}
+@include fw.mq("max")  {
+    .f-font-base {
+        font-size: 16px;
+    }
+}
+
+
+/* _breakOpt
+=========================================== */
+.f-sphide {
+    display: none;
+}
+@include fw.mq("pc")  {
+    .f-sphide {
+        display: block;
+    }
+}
+.f-pchide {
+    display: block;
+}
+@include fw.mq("pc")  {
+    .f-pchide {
+        display: none;
+    }
+}
